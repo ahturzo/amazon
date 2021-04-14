@@ -3,12 +3,15 @@ const Product = require('../models/product');
 
 const upload = require('../middlewares/upload-photo');
 
-// post request - create a new product
+// post request - create a new products
 router.post("/products", upload.single('photo'), async (req, res) => {
     try{
         let product = new Product();
+        product.ownerID = req.body.ownerID;
+        product.categoryID = req.body.categoryID;
         product.title = req.body.title;
         product.description = req.body.description;
+        product.price = req.body.price;
         product.photo = req.file.location;
         product.stockQuantity = req.body.stockQuantity;
 
@@ -25,7 +28,7 @@ router.post("/products", upload.single('photo'), async (req, res) => {
     }
 })
 
-// get request - get all product's
+// get request - get all products's
 router.get("/products", async (req, res) => {
    try{
         let products = await Product.find();
@@ -41,7 +44,7 @@ router.get("/products", async (req, res) => {
    }
 });
 
-// get request - get a single product
+// get request - get a single products
 router.get("/products/:id", async (req, res) => {
     try{
         let product = await Product.findOne({ _id: req.params.id });
@@ -57,7 +60,7 @@ router.get("/products/:id", async (req, res) => {
     }
 });
 
-// put request - update a single product
+// put request - update a single products
 router.put("/products/:id", upload.single('photo'), async (req, res) => {
     try{
         let product = await Product.findOneAndUpdate({ _id: req.params.id }, {
@@ -83,7 +86,7 @@ router.put("/products/:id", upload.single('photo'), async (req, res) => {
     }
 });
 
-// delete request - delete a single product
+// delete request - delete a single products
 router.delete("/products/:id", async (req, res) => {
     try{
         let product = await Product.findOneAndDelete({ _id: req.params.id });
