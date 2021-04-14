@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27f49ba8-eab7-49ef-88e2-197a3a2ff6ae" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qwZZi50UKdDQJO8jORoc1wM1oR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27f49ba8-eab7-49ef-88e2-197a3a2ff6ae" name="Default Changelist" comment="" />
+      <created>1617992670175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617992670175</updated>
+      <workItem from="1617992671302" duration="4332000" />
+      <workItem from="1618051146460" duration="51000" />
+      <workItem from="1618229165957" duration="2078000" />
+      <workItem from="1618337131537" duration="7325000" />
+      <workItem from="1618344790262" duration="9802000" />
+      <workItem from="1618390526799" duration="1754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="684" y="276" key="#Notifications" timestamp="1618338752587">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="684" y="276" key="#Notifications/62.0.1474.864@62.0.1474.864" timestamp="1618338752587" />
+    <state x="479" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1618338347859">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="479" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/62.0.1474.864@62.0.1474.864" timestamp="1618338347859" />
+  </component>
+</project>
