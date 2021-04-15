@@ -7,8 +7,8 @@ const upload = require('../middlewares/upload-photo');
 router.post("/products", upload.single('photo'), async (req, res) => {
     try{
         let product = new Product();
-        product.ownerID = req.body.ownerID;
-        product.categoryID = req.body.categoryID;
+        product.owner = req.body.ownerID;
+        product.category = req.body.categoryID;
         product.title = req.body.title;
         product.description = req.body.description;
         product.price = req.body.price;
@@ -31,7 +31,7 @@ router.post("/products", upload.single('photo'), async (req, res) => {
 // get request - get all products's
 router.get("/products", async (req, res) => {
    try{
-        let products = await Product.find();
+        let products = await Product.find().populate("owner category").exec();
         res.json({
             status: true,
             products: products
@@ -47,7 +47,7 @@ router.get("/products", async (req, res) => {
 // get request - get a single products
 router.get("/products/:id", async (req, res) => {
     try{
-        let product = await Product.findOne({ _id: req.params.id });
+        let product = await Product.findOne({ _id: req.params.id }).populate("owner category").exec();
         res.json({
             status: true,
             product: product
