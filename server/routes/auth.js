@@ -38,13 +38,35 @@ router.post('/auth/signup', async (req, res) => {
 /* user Profile */
 router.get('/auth/user', verifyToken, async (req, res) => {
     try{
-        let user = await User.findOne({ _id: req.decoded._id });
-        if(user) {
+        let foundUser = await User.findOne({ _id: req.decoded._id });
+        if(foundUser) {
             res.json({
                 success: true,
-                user: user
+                user: foundUser
             })
         }
+    } catch (e) {
+        res.status(500).json({
+            success: false,
+            message: e.message
+        })
+    }
+})
+
+/* update profile */
+router.put('/auth/user', verifyToken, async (req, res) => {
+    try{
+        let foundUser = {};
+        if(req.body.name) foundUser.name = req.body.name;
+        if(req.body.email) foundUser.email = req.body.email;
+        if(req.body.password) foundUser.password = req.body.password;
+
+        await User.findOneAndUpdate({ _id: req.decoded._id }, { $set: foundUser }, { upsert: false });
+        // upsert: if dont find the data by id then create new data from sets
+        res.json({
+            success: true,
+            message: "Profile updated"
+        });
     } catch (e) {
         res.status(500).json({
             success: false,
@@ -56,16 +78,16 @@ router.get('/auth/user', verifyToken, async (req, res) => {
 /* Login */
 router.post("/auth/login", async (req, res) => {
     try{
-        let user = await User.findOne({ email: req.body.email });
-        if(!user)
+        let foundUser = await User.findOne({ email: req.body.email });
+        if(!foundUser)
         {
-            res.json({
+            res.status(403).json({
                 success: false,
                 message: "Authentication failed, User not found!!!"
             })
         } else {
-            if(user.comparePassword(req.body.password)) {
-                let token = jwt.sign(user.toJSON(), process.env.SECRET, {
+            if(foundUser.comparePassword(req.body.password)) {
+                let token = jwt.sign(foundUser.toJSON(), process.env.SECRET, {
                     expiresIn: 604800   // 1week
                 });
                 res.json({
