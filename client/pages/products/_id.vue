@@ -340,18 +340,27 @@
                         </div>
                     </div>
                 </div>
+
+                <ReviewSection :product="product" :reviews="reviews"/>
             </div>
         </div>
     </main>
 </template>
 
 <script>
+    import ReviewSection from "~/components/ReviewSection";
     export default {
+        components: {ReviewSection},
         async asyncData({ $axios, params }) {
             try{
-                let response = await $axios.$get(`/api/products/${ params.id }`);
+                let singleProduct = $axios.$get(`/api/products/${ params.id }`);
+                let manyReviews = $axios.$get(`/api/reviews/${ params.id }`);
+
+                const [productResponse, reviewResponse] = await Promise.all([singleProduct, manyReviews]);
+                console.log(reviewResponse)
                 return{
-                    product: response.product
+                    product: productResponse.product,
+                    reviews: reviewResponse.reviews
                 }
             } catch (e) {
                 console.log(e)

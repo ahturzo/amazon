@@ -1,5 +1,10 @@
 const URL = 'http://localhost:8000'
 export default {
+    server: {
+        port: 9000, // default: 3000
+        host: '0.0.0.0', // default: localhost,
+        timing: false
+    },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'client',
@@ -38,12 +43,17 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/auth'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
       proxy: true,
       baseURL: URL
+  },
+
+  proxy: {
+      "/api": URL
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -55,5 +65,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  auth: {
+      strategies: {
+          local: {
+              endpoints: {
+                  login: { propertyName: "token" },
+                  logout: true
+              }
+          }
+      }
   }
 }
