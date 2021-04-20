@@ -93,7 +93,18 @@
                                     <i class="fas fa-chevron-down" style="font-size: 8px !important; color: #555 !important;"></i>
                                 </a> (Author)
                             </div>
-                            <div class="reviewGroup"></div>
+                            <div class="reviewGroup">
+                                <no-ssr>
+                                    <star-rating :rating="product.averageRating"
+                                                 :show-rating="false"
+                                                 :glow="1"
+                                                 :rounded-corners="true"
+                                                 :border-width="1"
+                                                 :read-only="true"
+                                                 :star-size="18"
+                                                 :star-points="[23,2,14,17,0,19,10,34,7,50,23,43,38,50,36,34,46,19,31,17]" />
+                                </no-ssr>
+                            </div>
                             <hr style="margin-top: 10px;">
                             <!-- A tags dummy data-->
                             <div class="mediaMatrix">
@@ -349,8 +360,9 @@
 
 <script>
     import ReviewSection from "~/components/ReviewSection";
+    import StarRating from "vue-star-rating";
     export default {
-        components: {ReviewSection},
+        components: {ReviewSection, StarRating},
         async asyncData({ $axios, params }) {
             try{
                 let singleProduct = $axios.$get(`/api/products/${ params.id }`);
