@@ -21,12 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="27f49ba8-eab7-49ef-88e2-197a3a2ff6ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ReviewSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/ReviewSection.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/products/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/products/_id.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,9 @@
       <workItem from="1618767775358" duration="3083000" />
       <workItem from="1618771485905" duration="8218000" />
       <workItem from="1618851545730" duration="14236000" />
-      <workItem from="1618920486819" duration="3597000" />
+      <workItem from="1618920486819" duration="6623000" />
+      <workItem from="1618955515013" duration="5740000" />
+      <workItem from="1619002651670" duration="7194000" />
     </task>
     <servers />
   </component>
@@ -137,10 +138,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="456" y="197" key="run.anything.popup/62.0.1474.864@62.0.1474.864" timestamp="1618523661590" />
-    <state x="456" y="86" width="670" height="676" key="search.everywhere.popup" timestamp="1618436087609">
+    <state x="456" y="86" width="672" height="676" key="search.everywhere.popup" timestamp="1618959743051">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="456" y="86" width="670" height="676" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1618436087609" />
+    <state x="456" y="86" width="672" height="676" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1618959743051" />
     <state x="521" y="341" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1618394998028">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
