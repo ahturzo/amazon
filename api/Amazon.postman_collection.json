@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "8f254470-e1bd-4cef-ac26-5e4de7c4679d",
+		"name": "Amazon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Harry Potter",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Harry Potter is a series of seven fantasy novels written by British author, J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "49",
+									"type": "text"
+								},
+								{
+									"key": "stockQuantity",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/tabid/Downloads/88c8fe011aa2683f66e43efe9922dafc.jpg"
+								},
+								{
+									"key": "categoryID",
+									"value": "6076062ea00f163adc33f9f4",
+									"type": "text"
+								},
+								{
+									"key": "ownerID",
+									"value": "60789dce8fcb94356083f135",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Details by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/products/60770749702b11457c339af6",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"60770749702b11457c339af6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "categoryID",
+									"value": "6076062ea00f163adc33f9f4",
+									"type": "text"
+								},
+								{
+									"key": "ownerID",
+									"value": "60761c9bc925f5325008b403",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/tabid/Downloads/157284168_430590644864839_4540802834768861185_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/products/6075feafd08c5a2fa49ccb49",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"6075feafd08c5a2fa49ccb49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/products/6075fed558757737fcc6faaf",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"6075fed558757737fcc6faaf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "Book",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/categories",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Owner",
+			"item": [
+				{
+					"name": "Add Owner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Abid Hasan Turzo",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "Software Engineer",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/tabid/Downloads/IMG_20210305_134730.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/owners",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"owners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Owner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/owners",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"owners"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Abid Hasan Turzo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "tabidhasan003@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "superadmin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdjOGE0YmY0NDI3MjFiZjQ3MDk0NjYiLCJuYW1lIjoiQWJpZCBIYXNhbiBUdXJ6byIsImVtYWlsIjoiYWJpZC50dXJ6b0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCRWRDRRdG5ZdDFsQk16YTRsUGQxdDdldlhHclpiL0s4bnFJeGlGaVR2cVgvSWZZUDN4b2JUaSIsIl9fdiI6MCwiaWF0IjoxNjE4Nzc3NDE5LCJleHAiOjE2MTkzODIyMTl9.0CuBleMPfQyj_DzLNx1euUp3A0uOMtLEL9KoZ_lCWQo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/auth/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "abid.turzo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "111111",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdjOGE0YmY0NDI3MjFiZjQ3MDk0NjYiLCJuYW1lIjoiQWJpZCBIYXNhbiBUdXJ6byIsImVtYWlsIjoiYWJpZC50dXJ6b0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCRWRDRRdG5ZdDFsQk16YTRsUGQxdDdldlhHclpiL0s4bnFJeGlGaVR2cVgvSWZZUDN4b2JUaSIsIl9fdiI6MCwiaWF0IjoxNjE4Nzc3NDE5LCJleHAiOjE2MTkzODIyMTl9.0CuBleMPfQyj_DzLNx1euUp3A0uOMtLEL9KoZ_lCWQo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Turzo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abid.turzo@gmail.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/auth/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
