@@ -21,11 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="27f49ba8-eab7-49ef-88e2-197a3a2ff6ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/placeorder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/placeorder.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +67,16 @@
       <recent name="C:\Users\tabid\Desktop\amazon\admin\pages" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="order.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server/routes/order.js" working-dir="$PROJECT_DIR$/server/routes">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.order.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -103,7 +108,7 @@
       <workItem from="1619022477091" duration="9469000" />
       <workItem from="1619115580928" duration="12274000" />
       <workItem from="1619166239709" duration="3486000" />
-      <workItem from="1619179099720" duration="4162000" />
+      <workItem from="1619179099720" duration="6826000" />
     </task>
     <servers />
   </component>
@@ -131,6 +136,70 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="479" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/62.0.1474.864@62.0.1474.864" timestamp="1618423869080" />
+    <state width="1429" height="276" key="GridCell.Tab.0.bottom" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.0.center" timestamp="1619186111602">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1619186111602" />
+    <state width="1429" height="276" key="GridCell.Tab.0.left" timestamp="1619186111602">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1619186111602" />
+    <state width="1429" height="276" key="GridCell.Tab.0.right" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.1.bottom" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.1.center" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.1.left" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.1.right" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.2.bottom" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.2.center" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.2.left" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.2.right" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.3.bottom" timestamp="1619186111604">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1619186111604" />
+    <state width="1429" height="276" key="GridCell.Tab.3.center" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.3.left" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
+    <state width="1429" height="276" key="GridCell.Tab.3.right" timestamp="1619186111603">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1429" height="276" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1619186111603" />
     <state x="307" y="76" key="SettingsEditor" timestamp="1618425194506">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

@@ -11,7 +11,7 @@ const User = require('./models/user');
 dotenv.config();
 
 const app = express();
-mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true}, (err) => {
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true}, (err) => {
     if(err)
         console.log(err);
     else
